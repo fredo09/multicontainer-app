@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -f Dockerfile.dev -t alfredo09/noderedis-dev .
+  - docker build -f Dockerfile.dev -t noderedis-dev .
 
 script:
-  - docker run alfredo09/nodeRedis-dev npm run test
+  - docker run noderedis-dev npm run test
